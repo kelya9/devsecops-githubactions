@@ -1,0 +1,8 @@
+name: Run shell Commands   #name of github actions workflow
+on: [push]                 # when to trigger github actions workflow
+jobs:                      # used to define the actions
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:                     # define the commands we need to run and what the command is
+      - name: Echo a string
+        run: echo "Hello Security Gurus!! This is our first Github Actions Workflow file"
